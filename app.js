@@ -345,36 +345,36 @@ const saveFileVersionID = 263574036; // Uint32 id to check if save file is compa
 
 const guiControls_default = {
   vorticity : 0.005,
-  dragMultiplier : 0.001, // 0.01
+  dragMultiplier : 0, // 0.01
   wind : 0.0,
   globalEffectsStartAlt : 0,
   globalEffectsEndAlt : 10000,
   globalDrying : 0.000000, // 0.000010
   globalHeating : 0.0,
   soundingForcing : 0.0,
-  sunIntensity : 1.0,
-  waterTemperature : 25.0, // °C
+  sunIntensity : 10,
+  waterTemperature : 250, // °C
   dynamicWaterTemperature : true,
-  landEvaporation : 0.00005,
-  waterEvaporation : 0.0001,
-  evapHeat : 2.90,          //  Real: 2260 J/g
+  landEvaporation : 0.5,
+  waterEvaporation : 0.1,
+  evapHeat : 290,          //  Real: 2260 J/g
   meltingHeat : 0.43,       //  Real:  334 J/g
-  condensationRate : 0.0050,
+  condensationRate : 0.5,
   waterWeight : 0.25,       // 0.50
   inactiveDroplets : 0,
   aboveZeroThreshold : 1.0, // PRECIPITATION
-  subZeroThreshold : 0.005, // 0.01
-  spawnChance : 0.00005,    // 30. 10 to 50
+  subZeroThreshold : 0, // 0.01
+  spawnChance : 5,    // 30. 10 to 50
   snowDensity : 0.2,        // 0.3
-  fallSpeed : 0.0003,
-  growthRate0C : 0.0001,    // 0.0005
-  growthRate_30C : 0.001,   // 0.01
+  fallSpeed : 0.01,
+  growthRate0C : 1,    // 0.0005
+  growthRate_30C : 1,   // 0.01
   freezingRate : 0.01,
   meltingRate : 0.01,
   evapRate : 0.0008, // 0.0005
   displayMode : 'DISP_REAL',
-  wrapHorizontally : true,
-  SmoothCam : true,
+  wrapHorizontally : false,
+  SmoothCam : false,
   camSpeed : 0.01,
   exposure : 1.0,
   timeOfDay : 9.9,
@@ -392,7 +392,7 @@ const guiControls_default = {
   showGraph : false,
   realDewPoint : false, // show real dew point in graph, instead of dew point with cloud water included
   enablePrecipitation : true,
-  showDrops : false,
+  showDrops : true,
   paused : false,
   IterPerFrame : 10,
   auto_IterPerFrame : true,
