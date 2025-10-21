@@ -6,22 +6,22 @@ precision highp isampler2D;
 #define deg2rad 0.0174533
 
 
-#define lightHeatingConst 0.000002   // how much a unit of IR or sunlight (W/m2) changes the temperature per iteration
+#define lightHeatingConst 0.0002   // how much a unit of IR or sunlight (W/m2) changes the temperature per iteration
 
 #define standardSunBrightness 1250.; // W/m2
 
-#define maxWaterTemp 40.0
+#define maxWaterTemp 450
 
 #define waterHeatExchangeRate 0.0002
 
-#define waterHeatCapacity 50.0     // as multiple of airs heat capacity
+#define waterHeatCapacity 500     // as multiple of airs heat capacity
 
 #define fullGreenSoilMoisture 50.0 // level of soil moisture where vegetation reaches the greenest color
 
 #define fullWhiteSnowHeight 10.0   // snow height at witch full whiteness is displayed and max albedo is achieved
 #define snowMassToHeight 0.05
 
-#define snowMeltRate 0.000015
+#define snowMeltRate 0.00015
 
 
 #define ALBEDO_SNOW 0.85        // above 10 cm of snow cover without vegetation
