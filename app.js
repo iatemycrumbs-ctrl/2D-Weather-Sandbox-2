@@ -352,19 +352,19 @@ const guiControls_default = {
   globalDrying : 0.000000, // 0.000010
   globalHeating : 0.0,
   soundingForcing : 0.0,
-  sunIntensity : 10,
-  waterTemperature : 250, // °C
+  sunIntensity : 1,
+  waterTemperature : 25, // °C
   dynamicWaterTemperature : true,
-  landEvaporation : 0.5,
-  waterEvaporation : 0.1,
-  evapHeat : 290,          //  Real: 2260 J/g
+  landEvaporation : 0.0005,
+  waterEvaporation : 1,
+  evapHeat : 500,          //  Real: 2260 J/g
   meltingHeat : 0.43,       //  Real:  334 J/g
   condensationRate : 0.5,
   waterWeight : 0.25,       // 0.50
   inactiveDroplets : 0,
   aboveZeroThreshold : 1.0, // PRECIPITATION
   subZeroThreshold : 0, // 0.01
-  spawnChance : 5,    // 30. 10 to 50
+  spawnChance : 0.005,    // 30. 10 to 50
   snowDensity : 0.2,        // 0.3
   fallSpeed : 0.01,
   growthRate0C : 1,    // 0.0005
