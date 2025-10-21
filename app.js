@@ -344,7 +344,7 @@ const mToFt = 3.28084;
 const saveFileVersionID = 263574036; // Uint32 id to check if save file is compatible
 
 const guiControls_default = {
-  vorticity : 0.005,
+  vorticity : 5,
   dragMultiplier : 0, // 0.01
   wind : 0.0,
   globalEffectsStartAlt : 0,
@@ -388,9 +388,9 @@ const guiControls_default = {
   tool : 'TOOL_NONE',
   brushSize : 20,
   wholeWidth : false,
-  intensity : 0.01,
+  intensity : 1,
   showGraph : false,
-  realDewPoint : false, // show real dew point in graph, instead of dew point with cloud water included
+  realDewPoint : true, // show real dew point in graph, instead of dew point with cloud water included
   enablePrecipitation : true,
   showDrops : true,
   paused : false,
@@ -6315,4 +6315,4 @@ async function mainScript(initialBaseTex, initialWaterTex, initialWallTex, initi
             */
     }
   }
-}
+} // end of mainscript
