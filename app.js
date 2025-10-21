@@ -2952,8 +2952,8 @@ async function mainScript(initialBaseTex, initialWaterTex, initialWallTex, initi
   // console.log(gl.getContextAttributes());
 
   if (!gl) {
-    alert('Your browser does not support WebGL2, Download a new browser.');
-    throw ' Error: Your browser does not support WebGL2';
+    alert('your devicd does not support WebGL2, try a different new device.');
+    throw ' Error: your devicd does not support WebGL2';
   }
 
   // SETUP GUI
@@ -6206,7 +6206,7 @@ async function mainScript(initialBaseTex, initialWaterTex, initialWallTex, initi
       request.open('GET', fileName, false);
       request.send(null);
     } catch (error) {
-      await loadingBar.showError('ERROR loading shader files! If you just opened index.html, try again using a local server!');
+      await loadingBar.showError('ERROR loading shader files. pls check your internet cinnection.');
       throw error;
     }
 
@@ -6315,4 +6315,4 @@ async function mainScript(initialBaseTex, initialWaterTex, initialWallTex, initi
             */
     }
   }
-} // end of mainscript
+}
